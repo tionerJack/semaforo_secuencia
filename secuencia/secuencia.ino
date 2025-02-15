@@ -1,25 +1,42 @@
-const int RED = 11;
-const int YELLOW = 10;
-const int GREEN = 9;
-int lights[3] = {GREEN, YELLOW,RED};
+
+int pins[5] = {7,8,9,10,11};
+
 int step = 0;
+int direction = 1;
 
 void setup() {
   Serial.begin(9600);
-  pinMode(RED, OUTPUT);
-  pinMode(YELLOW, OUTPUT);
-  pinMode(GREEN, OUTPUT);
+  for(int i = 0; i < 5; i++){
+    pinMode(pins[i], OUTPUT);
+  }
 }
 
+
+
 void change(){
-  for(int i = 0; i < 3; i++){
-    digitalWrite(lights[i], LOW);
+  for(int i = 0; i < 5; i++){
+      digitalWrite(pins[i], LOW);
+    
   }
-  digitalWrite(lights[step], HIGH);
+      digitalWrite(pins[step], HIGH);
+  next();
+}
+
+void next(){
+
+  step +=  direction;
+
+  if(step >= 4){
+    direction = -1;
+  }
+
+  if(step <= 0){
+    direction = 1;
+  }
+
 }
 
 void loop() {
-  delay(5000); 
+  delay(200); 
    change(); 
-   step = (step + 1) % 3;
   }
