@@ -1,6 +1,6 @@
 // Programa Hola Mundo para Arduino
 // Define el pin del LED integrado
-const int LED_PIN = LED_BUILTIN;
+const int LED_PIN = 9;
 
 void setup() {
   // Inicializa la comunicación serial
