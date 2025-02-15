@@ -51,6 +51,7 @@ Se desarrolló una secuencia de luces tipo "auto fantástico" utilizando 5 LEDs.
 ## Código Utilizado
 
 ### Práctica 1: Semáforo
+Código fuente: https://github.com/tionerJack/semaforo_secuencia/blob/main/semaforo/semaforo.ino
 ```cpp
 const int RED = 11;
 const int YELLOW = 10;
@@ -80,6 +81,7 @@ void loop() {
 ```
 
 ### Práctica 2: Secuencia Auto Increíble
+Código fuente: https://github.com/tionerJack/semaforo_secuencia/blob/main/secuencia/secuencia.ino
 ```cpp
 int pins[5] = {7,8,9,10,11};
 int step = 0;
