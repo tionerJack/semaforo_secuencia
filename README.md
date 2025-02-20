@@ -28,13 +28,15 @@ Características principales de los LEDs:
 
 ## Metodología
 
-### Práctica 1: Semáforo
+### Práctica 1: Semáforo  
+[Vídeo de la práctica](https://drive.google.com/file/d/1aSMcrhcCacHfPWDSvNRxUyZNZ4fYy3lv/view?usp=drive_link)
 1. Diseño del circuito con 3 LEDs (rojo, amarillo y verde)
 2. Conexión de LEDs a pines digitales de Arduino
 3. Programación de secuencia temporizada
 4. Pruebas y ajustes de tiempos
 
 ### Práctica 2: Secuencia Auto Increíble
+[Vídeo de la práctica](https://drive.google.com/file/d/12ElpY4_Egcq6pjNN2UTmiDTFdk7098lb/view?usp=drive_link)
 1. Diseño del circuito con 8 LEDs
 2. Conexión en serie de LEDs a pines digitales
 3. Programación de efecto de desplazamiento
